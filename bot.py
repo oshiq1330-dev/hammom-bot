@@ -46,7 +46,7 @@ formulas = {
     "PPR Ushastik 20 (shablon) ichki":{"Dush":1, "Taxorat":1, "Mustahab":1},
     "PPR Ushastik 20 (1 talik) ichki":{"Rakvina":2, "Unitaz":1, "Chashagen":1, "Kirmashina":1},
     "PPR Krannik 25":{"Yomkist 350l":2, "Yomkist 500l":2, "Yomkist 650l":2, "Yomkist 750l":2, "Yomkist 1000l":2},
-    "PPR Nakidnoy 25×3/4":{"Yomkist 350l":2, "Yomkist 500l":1, "Yomkist 650l":1, "Yomkist 750l":1, "Yomkist 1000l":1},
+    "PPR Nakidnoy 25×3/4":{"Yomkist 350l":2, "Yomkist 500l":2, "Yomkist 650l":2, "Yomkist 750l":2, "Yomkist 1000l":2},
     "PPR Nakidnoy 25×1/2":{"Yomkist 350l":1, "Yomkist 500l":1, "Yomkist 650l":1, "Yomkist 750l":1, "Yomkist 1000l":1},
     "PPR Nakidnoy 20×1/2":{"Boiler 30l":2, "Boiler 50l":2, "Boiler 80l":2, "Boiler 100l":2},
     "Paplavoy 1/2":{"Yomkist 350l":1, "Yomkist 500l":1, "Yomkist 650l":1, "Yomkist 750l":1, "Yomkist 1000l":1},
