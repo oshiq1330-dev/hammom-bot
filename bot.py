@@ -348,7 +348,7 @@ def all_messages(message):
             user_step[user_id] = "kirmashina"
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
             markup.add("Ha 1 ta", "Ha 2 ta", "Yo'q keyingisi")
-            bot.send_message(user_id, "🧺 Kir mashina qo'yamizmi?", reply_markup=markup)
+            bot.send_message(user_id, "🧺 Kir mashina uchun joy qoldiramizmi?", reply_markup=markup)
 
     # ---------- TAXORAT ----------
     elif step == "taxorat":
@@ -360,7 +360,7 @@ def all_messages(message):
         user_step[user_id] = "kirmashina"
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
         markup.add("Ha 1 ta", "Ha 2 ta", "Yo'q keyingisi")
-        bot.send_message(user_id, "🧺 Kir mashina qo'yamizmi?", reply_markup=markup)
+        bot.send_message(user_id, "🧺 Kir mashina uchun qoldiramizmi?", reply_markup=markup)
         return
 
     # ---------- KIR MASHINA ----------
