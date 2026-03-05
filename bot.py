@@ -197,13 +197,14 @@ def all_messages(message):
             bot.send_message(user_id, "Iltimos tugmalardan birini tanlang.")
             return
         user_step[user_id] = "uzunlik"
-        bot.send_message(user_id, "📏 Xona uzunligini metrda kiriting (masalan: 5)")
+        bot.send_message(user_id, "📏 Xamom uzunligini metrda kiriting (masalan: 5.2)")
         return
 
     # ---------- UZUNLIK ----------
     elif step == "uzunlik":
         try:
-            add_product(user_id, "Uzunlik", int(text))
+              value = float(text.replace(",", "."))
+              add_product(user_id, "Uzunlik", value)
         except:
             bot.send_message(user_id, "Iltimos raqam kiriting")
             return
@@ -214,7 +215,8 @@ def all_messages(message):
     # ---------- KENGLIK ----------
     elif step == "kenglik":
         try:
-            add_product(user_id, "Kenglik", int(text))
+            value = float(text.replace(",", "."))
+            add_product(user_id, "Kenglik", value)
         except:
             bot.send_message(user_id, "Iltimos raqam kiriting.")
             return
@@ -228,7 +230,7 @@ def all_messages(message):
             user_step[user_id] = "boiler"
             markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
             markup.add("30l", "50l", "80l", "100l", "Yo'q keyingisi")
-            bot.send_message(user_id, "♨️ Boiler bormi?", reply_markup=markup)
+            bot.send_message(user_id, " ⚡️Suv isitgich (ariston) qo'yamizmi?", reply_markup=markup)
         return
 
     # ---------- YOMKIST ----------
@@ -238,7 +240,7 @@ def all_messages(message):
         user_step[user_id] = "boiler"
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
         markup.add("30l", "50l", "80l", "100l", "Yo'q keyingisi")
-        bot.send_message(user_id, "♨️ Boiler qo'yamizmi?", reply_markup=markup)
+        bot.send_message(user_id,"⚡️ Suv isitgich (ariston) qo'yamizmi?", reply_markup=markup)
         return
 
     # ---------- BOILER ----------
@@ -313,8 +315,8 @@ def all_messages(message):
                 user_step[user_id] = "kirmashina"
                 markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
                 markup.add("Ha 1 ta", "Ha 2 ta", "Yo'q keyingisi")
-                bot.send_message(user_id, "🧺 Kir mashina qo'yamizmi?", reply_markup=markup)
-            return
+                bot.send_message(user_id, "🧺 Kir mashina uchun joy qoldiramizmi?", reply_markup=markup)
+            re
 
     # Agar unitaz bor bo'lsa
         qty = 2 if "2ta" in text else 1
